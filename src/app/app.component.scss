@@ -1,0 +1,14 @@
+@import "../primary-styles";
+
+:host {
+  @include full-screen;
+
+  display: flex;
+  flex-direction: column;
+}
+
+.main {
+  @include responsive-margins;
+
+  flex: 1;
+}

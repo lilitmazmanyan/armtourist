@@ -1,0 +1,45 @@
+$green-light: rgba(3, 89, 2, 0.34);
+$green-dark: #015800;
+
+$tablet-breakpoint: 48rem;
+$phone-breakpoint: 30rem;
+
+@mixin flex-space-around {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+}
+
+@mixin link-separator {
+  &::after {
+    content: " | ";
+  }
+
+  &:last-child::after {
+    content: none;
+  }
+}
+
+@mixin full-screen {
+  position: fixed;
+
+  width: 100vw;
+  height: 100vh;
+
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+}
+
+@mixin responsive-margins {
+  margin: 1rem;
+
+  @media (max-width: $tablet-breakpoint - 1) {
+    margin: 0.75rem;
+  }
+
+  @media (max-width: $phone-breakpoint - 1) {
+    margin: 0.5rem;
+  }
+}

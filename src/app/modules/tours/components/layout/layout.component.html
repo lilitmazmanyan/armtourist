@@ -1,0 +1,28 @@
+<div class="tours-layout">
+  <section class="intro-section">
+    <h1>Tours</h1>
+    <p>
+      Here at Armtourist, each journey is a unique experience you won't want to forget. We offer ready-made tours that
+      you
+      can book for a hassle-free adventure, filled with exciting places like ancient monasteries and stunning
+      landscapes.
+      If those tours don't quite match what you're looking for, no worries! Our team is here to tailor a personalized
+      tour that fits you perfectly. Just let us know your preferences, and we'll create a special trip just for you. Our
+      friendly guides will be right there with you, ensuring everything runs smoothly and sharing all the local secrets.
+      Get ready to dive into Armenia's beauty, culture, and history – exactly the way you want it.
+    </p>
+  </section>
+
+  <div class="tours-list">
+    <div class="cards-container">
+      <app-card *ngFor="let tour of tours" [tour]="tour"></app-card>
+    </div>
+    <div class="filters">
+      <h2>Filters:</h2>
+      <label for="filter-tour-name">Name</label>
+      <input id="filter-tour-name" placeholder="Tour name">
+      <label for="filter-is-multiday">Is Multiple Day Tour</label>
+      <input id="filter-is-multiday" type="checkbox">
+    </div>
+  </div>
+</div>

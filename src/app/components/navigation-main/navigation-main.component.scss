@@ -1,0 +1,16 @@
+@import "../../../primary-styles";
+
+.navigation {
+  a {
+    @include link-separator;
+
+    &:hover {
+      color: rgb(18, 97, 153);
+    }
+
+    &:visited &:hover {
+      color: rgb(5, 83, 140);
+      text-decoration: none;
+    }
+  }
+}

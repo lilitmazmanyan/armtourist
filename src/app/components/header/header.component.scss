@@ -1,0 +1,13 @@
+@import "../../../primary-styles";
+
+.header-layout {
+  @include flex-space-around;
+
+  height: 5rem;
+  background-color: $green-light;
+
+  &-logo {
+    max-width: 500px;
+    min-width: 50px;
+  }
+}
